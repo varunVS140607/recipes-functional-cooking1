@@ -14,6 +14,14 @@
         <h1> 🍳 RecipeJS</h1>
         <p> Your Functional Cooking Companion </p>
 
+        <!-- NEW: Search Container -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search recipes or ingredients..." autocomplete="off">
+            <button id="clear-search" class="clear-btn" style="display: none;">
+                ✕
+            </button>
+        </div>
+
     </header>
     <main>
         <!--New: controls Section-->
@@ -40,12 +48,18 @@
                 </div>
             </div>
         </section>
+        <div class="recipe-info">
+            <p id="recipe-count">Showing 8 of 8 recipes</p>
+        </div>
         <div id="recipe-container">
             <!-- Recipe cards will be rendered here by JavaScript -->
 
         </div>
     </main>
-    <!-- TODO: Add header section -->
+    <section class="page-header">
+        <h2>Featured Recipes</h2>
+        <p>Browse and filter recipes to find your next meal.</p>
+    </section>
 
     <!-- TODO: Add main section -->
 
